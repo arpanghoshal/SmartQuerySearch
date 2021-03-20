@@ -7,7 +7,7 @@ from collections import Counter
 from torchtext.vocab import Vocab
 
 
-
+from urllib import parse
 import flask
 from flask import Flask, render_template, request, jsonify, json
 
@@ -179,14 +179,15 @@ model = model.to("cpu")
 
 
 
-@app.route('/topic/<OurInput>', methods=['GET'])
+@app.route('/topic', methods=['GET'])
 
 
 
-def TopicDetection(OurInput):
-
+def TopicDetection():
+	query = request.args.get('query')
+	query = parse.unquote(query)
 	
-	output = str("%s" %ag_news_label[predict(ex_text_str, text_pipeline)])
+	output = str(predict(query, text_pipeline))
 
 	return(jsonify(output))
 	
