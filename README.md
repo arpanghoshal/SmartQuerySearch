@@ -12,9 +12,9 @@ In 0.0.0.0:5052 -> Query answer wil work
 ## Format
 #### GET Requests 
 
-- Topic Detection: 0.0.0.0:5051/topic?query=<your-query>
-- Smart Query Search: 0.0.0.0:5052/answer/<your-website>?query=<your-query>
+- Topic Detection: 0.0.0.0:5051/topic?query=*your-query*
+- Smart Query Search: 0.0.0.0:5052/answer/<your-website>?query=*your-query*
 
 Example:-
-- 0.0.0.0:5051/topic/when apple was found
+- 0.0.0.0:5051/topic?query=when apple was found
 - 0.0.0.0:5052/answer/wikipedia/?query=when apple was found
