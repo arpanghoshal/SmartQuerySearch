@@ -1,0 +1,8 @@
+torch
+torchtext
+sentence-transformers
+transformers
+trafilatura
+keras
+pysbd
+spacy==2.3.2
