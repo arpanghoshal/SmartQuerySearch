@@ -13,7 +13,7 @@ In 0.0.0.0:5052 -> Query answer wil work
 #### GET Requests 
 
 - Topic Detection: 0.0.0.0:5051/topic?query=*your-query*
-- Smart Query Search: 0.0.0.0:5052/answer/<your-website>?query=*your-query*
+- Smart Query Search: 0.0.0.0:5052/answer/*your-website*?query=*your-query*
 
 Example:-
 - 0.0.0.0:5051/topic?query=when apple was found
